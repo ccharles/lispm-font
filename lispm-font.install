@@ -1,13 +1,15 @@
 # Based on terminus-font-ttf install file.
 
 post_upgrade() {
-  printf 'Updating font cache...'
+  if [ -e '/usr/bin/fc-cache' ]; then
+    printf 'Updating font cache...'
 
-  fc-cache -fs
-  mkfontscale /usr/share/fonts/misc
-  mkfontdir /usr/share/fonts/misc
+    fc-cache -fs
+    mkfontscale /usr/share/fonts/misc
+    mkfontdir /usr/share/fonts/misc
 
-  echo 'done.'
+    echo 'done.'
+  fi
 }
 
 post_remove() {
