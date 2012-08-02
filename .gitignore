@@ -2,3 +2,6 @@ src/*
 pkg/*
 *.tar.xz
 *.tar.gz
+*.pcf.gz
+*.psf
+LICENSE
