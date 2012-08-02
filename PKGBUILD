@@ -1,4 +1,4 @@
-# Maintainer: Chris Charles <chris@ccharles.ca>
+# Maintainer: Chris Charles chris (at) ccharles (dot) ca
 
 pkgname=lispm-font
 pkgver=0.1
